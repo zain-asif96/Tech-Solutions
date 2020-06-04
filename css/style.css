@@ -1,0 +1,623 @@
+body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Header Css */
+
+.header-container {
+    box-shadow: 1px 1px 12px #6565654d;
+    background: linear-gradient(to right, #ffffff 30%, #009aff5c 125%);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo-container {
+    display: flex !important;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: 800;
+    font-size: 25px;
+    color: #2286c6;
+}
+
+.active {
+    font-weight: 800;
+    color: #2286c6;
+}
+
+.navbar-menu li {
+    margin-right: 18px;
+}
+
+.navbar-menu li a {
+    color: #2286c6 !important;
+    font-weight: 600;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    border-color: transparent !important;
+    line-height: 1.9em;
+}
+
+.dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #2285c6 !important;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    color: #2285c6;
+    text-decoration: underline;
+}
+
+.about-description {
+    margin: 0 10px;
+    background: #ffff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: inset 1px 1px 20px 0px #2285c6;
+    padding: 40px;
+}
+
+.about-description h3 {
+    font-weight: bold;
+}
+
+.about-description p {
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+.icon-servicebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 16px 4px #b4d5ecb5;
+    overflow: hidden;
+}
+
+.icon-servicebox .subserv-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.icon-servicebox .subserv-box {
+    transition: transform 0.6s ease;
+}
+
+.subserv-box i {
+    font-size: 70px;
+    color: #326fc6;
+}
+
+.service-heading {
+    margin: 20px 0 10px;
+}
+
+.service-heading h3 {
+    text-transform: uppercase;
+    color: #316dc3;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Cta Banner Css */
+
+.cta-banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background-color: #2285c6;
+    overflow: hidden;
+    position: relative;
+}
+
+.cta-banner:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    border: 4px solid #0d6096;
+    transform: rotate(44deg);
+    background: #0d6096;
+    top: -74px;
+    right: 0px;
+}
+
+.cta-content {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.sub-heading {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.main-heading {
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+.call-to-btn {
+    margin-left: 170px;
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-btn a {
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background: #ffffff;
+    padding: 13px 30px;
+    color: #2285c6;
+}
+
+.call-to-btn a:hover {
+    text-decoration: none;
+}
+
+/* About Us Page Css */
+
+.about-us-main {
+    min-height: 500px;
+    z-index: 5;
+    position: relative;
+    background: url('../images/about-us-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.about-us {
+    content: "";
+    background-color: rgba(34, 133, 198, 0.66);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about-content {
+    margin-bottom: 40px;
+    padding-top: 300px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 46px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.about-title:after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    border: 3px solid #ffffff;
+    left: 32px;
+    top: 73%;
+}
+
+.main-content-about {
+    margin-bottom: 80px;
+}
+
+.mission-image img {
+    width: 100%;
+}
+
+.mission-content {
+    color: #1c75b4;
+}
+
+.mission-content h3 {
+    font-weight: 800;
+}
+
+.mission-content p {
+    line-height: 1.9em;
+    margin-top: 30px
+}
+
+/* Services Page Css */
+
+.services-main {
+    min-height: 500px;
+    z-index: 5;
+    position: relative;
+    background: url('../images/services.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.services {
+    content: "";
+    background-color: rgba(34, 133, 198, 0.66);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.services-content {
+    margin-bottom: 40px;
+    padding-top: 300px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.services-title {
+    font-size: 46px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.services-title:after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    border: 3px solid #ffffff;
+    left: 32px;
+    top: 73%;
+}
+
+.main-content-services {
+    margin-bottom: 80px;
+}
+
+.service-icon {
+    width: 100%;
+    color: #1c75b4;
+    text-align: center;
+}
+
+.service-icon .fa-mobile {
+    font-size: 250px;
+}
+
+.service-icon .fa-laptop {
+    font-size: 230px;
+}
+
+.service-icon .fa-object-group {
+    font-size: 180px;
+}
+
+.service-icon .fa-paint-brush {
+    font-size: 180px;
+}
+
+.service-icon .fa-edit {
+    font-size: 180px;
+}
+
+.service-icon::before {
+    content: "";
+    background: #0e76a812;
+    width: 200px;
+    height: 174px;
+    position: absolute;
+    top: 133px;
+    margin: -95px;
+    transform: rotate(45deg);
+    right: 223px;
+}
+
+.service-content {
+    color: #1c75b4;
+}
+
+.service-content h3 {
+    font-weight: 800;
+}
+
+.service-content p {
+    line-height: 1.9em;
+    margin-top: 30px
+}
+
+/* Team Page Css */
+
+.team-icon img {
+    width: 100%;
+    max-width: 220px;
+}
+
+.team-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.team-info .team-infosub {
+    transition: transform 0.6s ease;
+}
+
+.team-info .team-infosub:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.team-info h2 {
+    color: #2286c6;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team-info h6 {
+    color: #2286c6;
+}
+
+/* Contact Us Page Css */
+
+.contact-us-main {
+    min-height: 500px;
+    z-index: 5;
+    position: relative;
+    background: url('../images/contact.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.contact-us {
+    content: "";
+    background-color: rgba(34, 133, 198, 0.66);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-content {
+    margin-bottom: 40px;
+    padding-top: 300px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 46px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.contact-title:after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    border: 3px solid #ffffff;
+    left: 32px;
+    top: 73%;
+}
+
+.contact-heading {
+    color: #1c75b4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #2683c0;
+    width: 20%;
+    padding: 13px;
+    color: #ffff;
+    font-weight: 800;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: 1px 3px 19px #2683c03b;
+    font-size: 20px;
+}
+
+
+/* Team Page Css */
+
+.team-main {
+    min-height: 500px;
+    z-index: 5;
+    position: relative;
+    background: url('../images/our-team.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.team {
+    content: "";
+    background-color: rgba(34, 133, 198, 0.66);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.team-content {
+    margin-bottom: 40px;
+    padding-top: 300px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.team-title {
+    font-size: 46px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.team-title:after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    border: 3px solid #ffffff;
+    left: 32px;
+    top: 73%;
+}
+
+/* Footer Css */
+
+.footer-container {
+    background: linear-gradient(to right, #ffffff 30%, #eee 155%);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo,
+.service-container,
+.contact-container,
+.social-container {
+    margin-top: 30px;
+}
+
+.service-head,
+.contact-head,
+.social-head {
+    border: 0;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #2189ce;
+}
+
+.service-container ul,
+.contact-container ul,
+.social-container ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.service-container ul li,
+.contact-container ul li,
+.social-container ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.service-container ul li a,
+.social-container ul li a {
+    text-transform: capitalize;
+    position: relative;
+    color: #2189ce;
+}
+
+.service-container ul li a:hover,
+.contact-container ul li a:hover,
+.social-container ul li a:hover {
+    text-decoration: none;
+}
+
+.fa-phone,
+.fa-envelope {
+    margin-right: 10px;
+}
+
+.fa-facebook-square {
+    margin-right: 10px;
+    color: #3b5998;
+}
+
+.fa-twitter-square {
+    margin-right: 10px;
+    color: #00acee;
+}
+
+.fa-instagram {
+    margin-right: 10px;
+    color: #3f729b;
+}
+
+.fa-linkedin-square {
+    margin-right: 10px;
+    color: #0e76a8;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    .call-to-btn {
+        margin-left: 0;
+        justify-content: end;
+    }
+    .about-us-main {
+        min-height: 200px;
+    }
+    .services-main {
+        min-height: 200px;
+    }
+    .mission-content {
+        margin-top: 50px;
+    }
+    .submit-btn {
+        width: 70%;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo-container {
+        flex-direction: column;
+    }
+}
